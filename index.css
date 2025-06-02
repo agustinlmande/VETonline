@@ -1,6 +1,100 @@
 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #0c0a0a;
+}
+
+header, footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #810262;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+h1, h3 {
+    margin: 10px 0;
+}
 
 .opcion-multiple {
   display: inline-block;
   margin-right: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005fa3;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.button-group {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.nota {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 10px;
+}
+
+.fondo-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+.footer-contact {
+    margin-top: 10px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer .copyright {
+    margin-top: 15px;
+    font-size: 0.8em;
+    color: #999;
 }
