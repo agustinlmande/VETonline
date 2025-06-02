@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>VETonline</title>
+        <link rel="stylesheet" href="index.css">
     </head>
     
     <body>
@@ -15,12 +16,10 @@
         
         <main>
             <form id="formulario">
-                <label>Mascota*:
-                    <select required>
-                        <option value="">Seleccionar</option>
-                        <option>Perro</option>
-                        <option>Gato</option>
-                    </select>
+             <p>Mascota*:</p>
+                <label class="opcion-multiple">
+                    <input type="radio" name="mascota" value="Perro" required> Perro
+                    <input type="radio" name="mascota" value="Gato"> Gato
                 </label>
 
                 <label>Nombre*:
