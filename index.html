@@ -7,27 +7,32 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     
-    <body>
-        <header>
-            <div class="manu">
-                <img src="Imágenes/vineta-violeta.svg" alt="vineta-violeta">
-                <img src="Imágenes/logo.png" alt="logo">
-                <nav>
-                    <a href="#">lorem</a>
-                    <a href="#">lorem</a>
-                </nav>
-            </div>
+    <header>
+        <div class="manu">
+            <img src="Imágenes/logo.png" class="logo" alt="logo">
+            <nav>
+                <a href="#">lorem</a>
+                <a href="#">lorem</a>
+            </nav>
+        </div>
+    </header>
 
+    <body>
+        <main>
             <h1>Bienvenidos!</h1>
             <img src="Imágenes\imagen.png" alt="imagen de mascotas">
-            <h3>Mascotas</h3>
-            <button>INGRESAR MASCOTA</button>
-        </header>
         
-        <main>
+            <div class="mascotas-boton">
+            <h3>Mascotas</h3>
+            <button class="boton">INGRESAR MASCOTA</button>
+            </div>
+
+        <img src="Imágenes/vineta-violeta.svg" class="vineta-violeta" alt="vineta-violeta">
+
             <form id="formulario">
-             <p>Mascota*:</p>
-                <label class="opcion-multiple">
+            <p>Mascota*:</p>
+                <div class="primera-linea">
+                    <label class="opcion-multiple">
                     <input type="radio" name="mascota" value="Perro" required> Perro
                     <input type="radio" name="mascota" value="Gato"> Gato
                 </label>
@@ -39,6 +44,7 @@
                 <label>Apodo*:
                     <input type="text" required>
                 </label>
+                </div>
 
                 <label>Edad Aproximada*:
                     <input type="text" required>
@@ -81,8 +87,6 @@
         </main>
 
         <footer>
-            <img src="Imágenes/footer-bg.svg" class="fondo-footer" alt="footer">
-            <div class="fondo-footer"></div>
             <p>Contactanos</p>
             <div class="footer-contact">
                 <p>Teléfono: +54 9 11 5162 0516</p>

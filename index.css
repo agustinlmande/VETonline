@@ -1,52 +1,126 @@
+header {
+    padding: 20px;
+    margin: 0px;
+    background-color: #732b81; 
+}
+
+.manu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    /*margin es la separacion fuera de la caja*/
+    margin-left: 330px;
+    /*es la separacion del contenido de la caja y sus bordes*/
+    padding: 0;
+    width: 150px;
+
+}
+
+nav {
+    font-family: Arial;
+    text-decoration: none;
+    margin-right: 330px;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+nav a {
+    font-family: Arial;
+    text-decoration: none;
+    margin-right: 20px;
+    color: #ffffff;*/
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0;
+    background-color: #f0f0f0;
+    color: #7e2b81;
+}
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px;
-    background-color: #0c0a0a;
+    padding: 0px;
+    background-color: #f0f0f0;
 }
 
-header, footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #810262;
-    margin-bottom: 20px;
-    border-radius: 10px;
+.mascotas-boton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
-h1, h3 {
-    margin: 10px 0;
+.mascotas-boton h3 {
+    margin: 0;
+    margin-left: 330px;
+    padding-bottom: 0;
+    font-size: 35px;
+    color: #7e2b81;
 }
 
-.opcion-multiple {
+.vineta-violeta {
+    width: 50px;
+    margin-left: 330px;
+    margin-top: 0;
+    padding: 0;
+}
+
+.boton {
+    padding: 10px 20px;
+    margin-right: 330px;
+    background-color: #f0f0f0;
+    color: rgb(13, 168, 230);
+    border: solid rgb(13, 168, 230);
+    border-width: 1px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight:200;
+}
+
+.boton:hover {
+    background-color: rgba(13, 169, 230, 0.425);
+}
+
+/*.opcion-multiple {
   display: inline-block;
   margin-right: 20px;
-}
+}*/
 
-button {
-    padding: 10px 20px;
-    background-color: #0077cc;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #005fa3;
-}
 
 form {
+    margin-top: 100px;
+    margin-left: 335px;
+    margin-right: 335px;
+    padding: 50px;
     background-color: #ffffff;
-    padding: 20px;
     border-radius: 10px;
-    max-width: 600px;
-    margin: auto;
+    max-width: 1250px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.primera-linea {
+    display: flex;
+    margin-top: 15px;
+    font-weight: bold;
+    
+}
+
+.primera-linea .opcion-multiple {
+    display: flex;
+    font-weight: bold;
+
+}
+
+
 label {
-    display: block;
+    display: flex;
     margin-top: 15px;
     font-weight: bold;
 }
