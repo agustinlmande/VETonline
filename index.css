@@ -105,19 +105,13 @@ form {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.primera-linea {
-    display: flex;
-    margin-top: 15px;
-    font-weight: bold;
-    
-}
-
-.primera-linea .opcion-multiple {
-    display: flex;
-    font-weight: bold;
+.caja {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: (3,1fr);
+    gap: 8px;
 
 }
-
 
 label {
     display: flex;
@@ -126,6 +120,8 @@ label {
 }
 
 input, select, textarea {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     padding: 8px;
     margin-top: 5px;
