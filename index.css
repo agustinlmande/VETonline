@@ -1,3 +1,6 @@
+:root{--textCOLOR:#ffffff}
+:root{--colorPRINCIPAL:#ededed}
+
 header {
     padding: 20px;
     margin: 0px;
@@ -23,14 +26,14 @@ nav {
     text-decoration: none;
     margin-right: 330px;
     margin-top: 10px;
-    color: #ffffff;
+    color: var(--textcolor);
 }
 
 nav a {
     font-family: Arial;
     text-decoration: none;
     margin-right: 20px;
-    color: #ffffff;*/
+    color: var(--textcolor)
 }
 
 h1 {
@@ -45,7 +48,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0px;
-    background-color: #f0f0f0;
+    background-color: var(--colorPRINCIPAL);
 }
 
 .mascotas-boton {
@@ -113,26 +116,45 @@ form {
 
 }
 
+.input-radio {
+    display: flex;
+    margin-top: 15px;
+}
+
+.input-radio [type="radio"] {
+    margin-right: 10px;
+    margin-left: 20px;
+    accent-color: antiquewhite;
+    outline: none;
+    border: none;
+}
+
 label {
     display: flex;
     margin-top: 15px;
     font-weight: bold;
 }
 
-input, select, textarea {
+
+input:not([type="radio"]), select, textarea {
     display: flex;
     flex-direction: column;
     width: 100%;
     padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    margin-top: 15px;
+    color: #999;
+    border: 1px solid #c70000;
+    background-color: var(--colorPRINCIPAL);
+    border-radius: 20px;
     box-sizing: border-box;
 }
 
+
+
 textarea {
     resize: vertical;
-    min-height: 80px;
+    height: 35px;
+    color: rgb(143, 95, 34);
 }
 
 .button-group {
@@ -155,16 +177,75 @@ textarea {
   z-index: -1;
 }
 
-.footer-contact {
+footer {
+    margin-top: 150px;
+    background-image: url(Imágenes/footer-bg-cropped.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height:600px;
+}
+
+footer .footer-contact {
+    margin: 20px 700px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+footer .contactanos {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--textCOLOR);
+    padding-top: 120px;
+    margin-bottom: 20px;
+    
+}
+
+footer .vineta-blanca {
+    width: 50px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+footer .lorem-footer {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 19px;
+    margin-left: 600px;
+    margin-right: 600px;
+    color: var(--textCOLOR);
+    line-height: 1.8;
+}
+
+footer .imagen-tel {
+    width: 60px;
     margin-top: 10px;
 }
 
-footer p {
-    margin: 5px 0;
+footer .tel {
+    display: flex;
+}
+
+footer .imagen-mail {
+    width: 60px;
+    margin-top: 10px;
+}
+
+footer .mail {
+    display: flex;
+}
+
+
+footer .datos{
+    margin-left: 15px;
+    display: inline;
+    color: var(--textCOLOR);
 }
 
 footer .copyright {
-    margin-top: 15px;
+    margin-top: 50px;
+    text-align: center;
     font-size: 0.8em;
     color: #999;
 }

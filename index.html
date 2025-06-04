@@ -1,121 +1,166 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>VETonline</title>
-        <link rel="stylesheet" href="index.css">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    
-    <header>
-        <div class="manu">
-            <img src="Imágenes/logo.png" class="logo" alt="logo">
-            <nav>
-                <a href="#">lorem</a>
-                <a href="#">lorem</a>
-            </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <title>VETonline</title>
+    <link rel="stylesheet" href="index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <header>
+    <div class="manu">
+      <img src="Imágenes/logo.png" class="logo" alt="logo" />
+      <nav>
+        <a href="#">lorem</a>
+        <a href="#">lorem</a>
+      </nav>
+    </div>
+  </header>
+
+  <body>
+    <main>
+      <h1>Bienvenidos!</h1>
+      <img src="Imágenes\imagen.png" alt="imagen de mascotas" />
+
+      <div class="mascotas-boton">
+        <h3>Mascotas</h3>
+        <button class="boton">INGRESAR MASCOTA</button>
+      </div>
+
+      <img
+        src="Imágenes/vineta-violeta.svg"
+        class="vineta-violeta"
+        alt="vineta-violeta"
+      />
+
+      <form id="formulario">
+        <div class="caja">
+          <div>
+            <label>Mascota*</label>
+            <div class="input-radio">
+              <input type="radio" name="mascota" value="Perro" required /> Perro
+              <input type="radio" name="mascota" value="Gato" /> Gato
+            </div>
+          </div>
+
+          <div>
+            <label>Nombre*:</label>
+            <input type="text" required />
+          </div>
+
+          <div>
+            <label>Apodo*:</label>
+            <input type="text" required />
+          </div>
+
+          <div>
+            <label>Edad Aproximada*:</label>
+            <input type="text" required />
+          </div>
+
+          <div>
+            <label>Sexo:</label>
+            <select>
+              <option value="">Seleccionar</option>
+              <option>Macho</option>
+              <option>Hembra</option>
+            </select>
+          </div>
+
+          <div>
+            <label>Descripción física*:</label>
+            <textarea required></textarea>
+          </div>
+
+          <div>
+            <label>Caracteristicas:</label>
+            <select name="color-principal" id="color-principal">
+              <option value="">Color principal</option>
+              <option value="negro">Negro</option>
+              <option value="blanco">Blanco</option>
+              <option value="marron">Marrón / Chocolate</option>
+              <option value="beige">Beige / Crema</option>
+              <option value="gris">Gris / Plateado</option>
+              <option value="dorado">Dorado</option>
+              <option value="rojizo">Rojizo</option>
+              <option value="atigrado">Atigrado</option>
+              <option value="tricolor">Tricolor</option>
+              <option value="bicolor">Bicolor</option>
+              <option value="manchado">Manchado</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+
+          <div>
+            <label>Añadir característica:</label>
+            <input type="text" />
+          </div>
+
+          <div>
+            <label>Características:</label>
+            <input type="text" />
+          </div>
+
+          <div>
+            <label>Fotos:</label>
+            <input type="file" />
+          </div>
+
+          <div class="button-group">
+            <button type="submit">GUARDAR</button>
+          </div>
         </div>
-    </header>
 
-    <body>
-        <main>
-            <h1>Bienvenidos!</h1>
-            <img src="Imágenes\imagen.png" alt="imagen de mascotas">
-        
-            <div class="mascotas-boton">
-            <h3>Mascotas</h3>
-            <button class="boton">INGRESAR MASCOTA</button>
-            </div>
+        <p class="nota">* Los campos marcados con (*) son obligatorios</p>
+      </form>
+    </main>
 
-        <img src="Imágenes/vineta-violeta.svg" class="vineta-violeta" alt="vineta-violeta">
-
-            <form id="formulario">
-            <div class="caja">
-                <div>
-                    <label>Mascota*</label>
-                    <input type="radio" name="mascota" value="Perro" required> Perro
-                    <input type="radio" name="mascota" value="Gato"> Gato
-                    
-                </div>
-                
-                <div>
-                    <label>Nombre*:</label>
-                    <input type="text" required>
-                        
-                </div>
-
-                <div>
-                    <label>Apodo*:</label>
-                    <input type="text" required>
-                    
-                </div>
-
-                <div>
-                    <label>Edad Aproximada*:</label>
-                    <input type="text" required>
-                    
-                </div>
-                
-                <div>
-                    <label>Sexo:</label>
-                    <select>
-                        <option value="">Seleccionar</option>
-                        <option>Macho</option>
-                        <option>Hembra</option>
-                    </select>
-                    
-                </div>
-                
-                <div>
-                    <label>Descripción física*:</label>
-                    <textarea required></textarea>
-                    
-                </div>
-                
-                <div>
-                    <label>Color principal:</label>
-                    <input type="text">
-                    
-                </div>
-                
-                <div>
-                    <label>Añadir característica:</label>
-                    <input type="text">
-                    
-                </div>
-                
-                <div>
-                    <label>Características:</label>
-                    <input type="text">
-                    
-                </div>
-                
-                <div>
-                    <label>Fotos:</label>
-                    <input type="file">
-                    
-                </div>
-                
-
-                <div class="button-group">
-                    <button type="submit">GUARDAR</button>
-                </div>
-            </div>
-
-                <p class="nota">* Los campos marcados con (*) son obligatorios</p>
-            </form>
-        </main>
-
-        <footer>
-            <p>Contactanos</p>
-            <div class="footer-contact">
-                <p>Teléfono: +54 9 11 5162 0516</p>
-                <p>Mail: info@vetonline.com</p>
-            </div>
-            <p class="copyright">Copyright © 2021. Todos los derechos reservados. Realizado por Think B</p>
-        </footer>
-    </body>
-
-    
-
+    <footer
+      style="
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      "
+    >
+      <div class="contactanos">Contactanos</div>
+      <div class="vineta-blanca">
+        <img src="Imágenes/vineta-blanca.svg" alt="vineta-blanca" />
+      </div>
+      <p class="lorem-footer">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit
+        rem optio possimus assumenda commodi facere? Ex repudiandae, alias
+        eligendi asperiores, expedita fuga eveniet tenetur quam, voluptas
+        possimus laborum vel in!
+      </p>
+      <div class="footer-contact">
+        <div class="tel">
+          <img src="Imágenes/tel.svg" class="imagen-tel" alt="telefono" />
+          <div class="datos">
+            <p>Teléfono:</p>
+            <p>+54 9 11 5162 0516</p>
+          </div>
+        </div>
+        <div class="mail">
+          <img src="Imágenes/mail.svg" class="imagen-mail" alt="mail" />
+          <div class="datos">
+            <p>Mail:</p>
+            <p>info@vetonline.com</p>
+          </div>
+        </div>
+      </div>
+      <div
+        style="
+          height: 2px;
+          width: 80%;
+          background-color: aliceblue;
+          margin-top: 15px;
+        "
+      ></div>
+      <p class="copyright">
+        Copyright © 2021. Todos los derechos reservados. Realizado por Think B
+      </p>
+    </footer>
+  </body>
 </html>
