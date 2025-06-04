@@ -1,10 +1,13 @@
-:root{--textCOLOR:#ffffff}
-:root{--colorPRINCIPAL:#ededed}
+:root {
+    --textCOLOR: #ffffff;
+    --colorPRINCIPAL: #ededed;
+    --coloSECUNDARIO: #8344ad;
+}
 
 header {
     padding: 20px;
     margin: 0px;
-    background-color: #732b81; 
+    background-color: var(--coloSECUNDARIO);
 }
 
 .manu {
@@ -13,12 +16,9 @@ header {
 }
 
 .logo {
-    /*margin es la separacion fuera de la caja*/
     margin-left: 330px;
-    /*es la separacion del contenido de la caja y sus bordes*/
     padding: 0;
     width: 150px;
-
 }
 
 nav {
@@ -26,14 +26,14 @@ nav {
     text-decoration: none;
     margin-right: 330px;
     margin-top: 10px;
-    color: var(--textcolor);
+    color: var(--textCOLOR);
 }
 
 nav a {
     font-family: Arial;
     text-decoration: none;
     margin-right: 20px;
-    color: var(--textcolor)
+    color: var(--textCOLOR);
 }
 
 h1 {
@@ -41,7 +41,7 @@ h1 {
     margin-top: 50px;
     margin-bottom: 0;
     background-color: #f0f0f0;
-    color: #7e2b81;
+    color: var(--coloSECUNDARIO);
 }
 
 body {
@@ -64,7 +64,7 @@ body {
     margin-left: 330px;
     padding-bottom: 0;
     font-size: 35px;
-    color: #7e2b81;
+    color: var(--coloSECUNDARIO);
 }
 
 .vineta-violeta {
@@ -84,18 +84,12 @@ body {
     border-radius: 20px;
     cursor: pointer;
     font-size: 15px;
-    font-weight:200;
+    font-weight: 200;
 }
 
 .boton:hover {
     background-color: rgba(13, 169, 230, 0.425);
 }
-
-/*.opcion-multiple {
-  display: inline-block;
-  margin-right: 20px;
-}*/
-
 
 form {
     margin-top: 100px;
@@ -110,10 +104,9 @@ form {
 
 .caja {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: (3,1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: (3, 1fr);
     gap: 8px;
-
 }
 
 .input-radio {
@@ -135,21 +128,21 @@ label {
     font-weight: bold;
 }
 
-
-input:not([type="radio"]), select, textarea {
+input:not([type="radio"]),
+select,
+textarea,
+.simil-input {
     display: flex;
     flex-direction: column;
     width: 100%;
     padding: 8px;
     margin-top: 15px;
     color: #999;
-    border: 1px solid #c70000;
+    border: 1px solid var(--colorPRINCIPAL);
     background-color: var(--colorPRINCIPAL);
     border-radius: 20px;
     box-sizing: border-box;
 }
-
-
 
 textarea {
     resize: vertical;
@@ -157,24 +150,84 @@ textarea {
     color: rgb(143, 95, 34);
 }
 
-.button-group {
-    margin-top: 20px;
+.caracteristica {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+#color-principal {
+    margin-top: 10px;
+}
+
+.b-caracteristica {
+    align-self: flex-end;
+    border: none;
+    background-color: transparent;
+    color: #0c9cb3;
+    font-weight: 600;
+    padding-top: 0;
+    cursor: pointer;
+}
+
+body #ingCA {
+    background-color: transparent;
+    color: #999;
+    border: none;
+    border-bottom: 1px solid var(--colorPRINCIPAL);
+}
+
+body .fotos {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+body .simil-input {
     text-align: center;
+}
+
+body .b-simil-input {
+    align-self: flex-end;
+    border: none;
+    background-color: transparent;
+    color: #0c9cb3;
+    font-weight: 600;
+    padding-top: 0;
+    cursor: pointer;
+}
+
+.enviar-form {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+    padding: 0;
 }
 
 .nota {
     font-size: 0.9em;
-    color: #666;
-    margin-top: 10px;
+    color: var(--coloSECUNDARIO);
+    margin: 0;
 }
 
-.fondo-footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  z-index: -1;
+body .b-guardar {
+    background-color: rgb(13, 168, 230);
+    color: rgb(159, 221, 245);
+    border: solid rgb(13, 168, 230);
+    border-width: 1px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 200;
+}
+
+body .b-guardar span {
+    display: inline-block;
+    transform: scale(0.6);
+    transform-origin: center;
 }
 
 footer {
@@ -182,7 +235,7 @@ footer {
     background-image: url(Imágenes/footer-bg-cropped.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    min-height:600px;
+    min-height: 600px;
 }
 
 footer .footer-contact {
@@ -199,7 +252,6 @@ footer .contactanos {
     color: var(--textCOLOR);
     padding-top: 120px;
     margin-bottom: 20px;
-    
 }
 
 footer .vineta-blanca {
@@ -236,8 +288,7 @@ footer .mail {
     display: flex;
 }
 
-
-footer .datos{
+footer .datos {
     margin-left: 15px;
     display: inline;
     color: var(--textCOLOR);
@@ -248,4 +299,100 @@ footer .copyright {
     text-align: center;
     font-size: 0.8em;
     color: #999;
+}
+
+/* ===== Responsive ===== */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 1024px) {
+    .logo {
+        margin-left: 20px;
+        width: 120px;
+    }
+
+    nav {
+        margin-right: 20px;
+        margin-top: 5px;
+    }
+
+    .mascotas-boton h3,
+    .vineta-violeta {
+        margin-left: 20px;
+    }
+
+    .boton {
+        margin-right: 20px;
+    }
+
+    form {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 30px;
+        max-width: 90vw;
+    }
+
+    footer .footer-contact {
+        margin: 20px 20px;
+        flex-wrap: wrap;
+    }
+
+    footer .lorem-footer {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+/* Móviles y pantallas pequeñas */
+@media (max-width: 600px) {
+    header .manu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-left: 0;
+        margin-bottom: 10px;
+        width: 100px;
+    }
+
+    nav {
+        margin-right: 0;
+        margin-top: 0;
+    }
+
+    .mascotas-boton {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 20px;
+    }
+
+    .mascotas-boton h3,
+    .vineta-violeta {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    form {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 20px;
+    }
+
+    .boton,
+    .b-guardar {
+        margin-right: 0;
+        width: 100%;
+        font-size: 18px;
+    }
+
+    footer .footer-contact {
+        margin: 20px 10px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer .lorem-footer {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }

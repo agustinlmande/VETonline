@@ -72,7 +72,7 @@
             <textarea required></textarea>
           </div>
 
-          <div>
+          <div class="caracteristica">
             <label>Caracteristicas:</label>
             <select name="color-principal" id="color-principal">
               <option value="">Color principal</option>
@@ -89,29 +89,31 @@
               <option value="manchado">Manchado</option>
               <option value="otro">Otro</option>
             </select>
+            <button class="b-caracteristica">+Añadir característica</button>
           </div>
 
           <div>
-            <label>Añadir característica:</label>
-            <input type="text" />
+            <label style="visibility: hidden">Falso label</label>
+            <input
+              type="text"
+              id="ingCA"
+              placeholder="Ingresar característica"
+            />
           </div>
 
-          <div>
-            <label>Características:</label>
-            <input type="text" />
-          </div>
-
-          <div>
+          <div class="fotos">
             <label>Fotos:</label>
-            <input type="file" />
+            <div class="simil-input">Seleccionar archivo</div>
+            <button class="b-simil-input">+Añadir archivo</button>
           </div>
 
-          <div class="button-group">
-            <button type="submit">GUARDAR</button>
+          <div class="enviar-form">
+            <p class="nota">* Los campos marcados con (*) son obligatorios</p>
+            <button class="b-guardar" type="submit">
+              <span>GUARDAR</span>
+            </button>
           </div>
         </div>
-
-        <p class="nota">* Los campos marcados con (*) son obligatorios</p>
       </form>
     </main>
 
