@@ -277,9 +277,11 @@ footer .vineta-blanca {
 footer .lorem-footer {
     margin-top: 50px;
     text-align: center;
+    max-width: 800px;
+    /* ancho máximo razonable */
+    min-width: 320px;
+    /* ancho mínimo para zoom extremo */
     font-size: 19px;
-    margin-left: 600px;
-    margin-right: 600px;
     color: var(--textCOLOR);
     line-height: 1.8;
 }
