@@ -46,6 +46,11 @@ h1 {
     color: var(--coloSECUNDARIO);
 }
 
+.mascotas-img {
+  width: 100%;
+  height: auto;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -96,6 +101,8 @@ body {
 }
 
 form {
+    display: flex;
+    flex-direction: column;
     margin: 20px auto;
     /* centrado y margen vertical */
     padding: 30px 20px;
@@ -239,9 +246,9 @@ body .b-guardar span {
 
 footer {
     margin-top: 150px;
-    background-image: url(Imágenes/footer-bg-cropped.svg);
+    background-image: url(Imágenes/bg-final.PNG);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     min-height: 600px;
 }
 
@@ -308,252 +315,66 @@ footer .copyright {
     color: #999;
 }
 
-/* Media query para pantallas medianas (max-width: 1200px) */
+
 @media screen and (max-width: 1200px) {
-    footer {
-        min-height: 500px;
-        padding: 40px 30px;
-        background-position: center top;
+  .logo {
+    margin-left: 40px;
+    width: 120px;
+  }
+
+  nav {
+    margin-right: 40px;
+  }
+
+  .mascotas-boton h3 {
+    margin-left: 40px;
+    font-size: 28px;
+  }
+
+  .vineta-violeta {
+    margin-left: 40px;
+    width: 40px;
+  }
+
+  .boton {
+    margin-right: 40px;
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+    form {
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 30px 15px;
     }
 
-    footer .footer-contact {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 30px;
-    }
-
-    footer .contactanos {
-        font-size: 32px;
-        padding-top: 80px;
-    }
-
-    footer .lorem-footer {
-        font-size: 17px;
-        max-width: 600px;
-    }
-}
-
-
-/* Imagen mascotas y logo responsivos */
-.mascotas-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.logo {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Mascotas-boton responsivo */
-.mascotas-boton h3 {
-    font-size: 35px;
-    margin-left: 330px;
-}
-
-.mascotas-boton {
-    max-width: 100%;
+  footer {
+    padding: 60px 40px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: auto;
     box-sizing: border-box;
-}
+  }
 
-/* Vineta violeta responsiva */
-.vineta-violeta {
-    max-width: 50px;
-    width: 100%;
-    margin-left: 330px;
-    height: auto;
-}
+  footer .footer-contact {
+    margin: 30px auto;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1000px;
+  }
 
-/* Media queries para pantallas pequeñas */
-@media screen and (max-width: 1200px) {
-    .logo {
-        margin-left: 20px;
-        width: 120px;
-    }
+  footer .lorem-footer {
+    font-size: 17px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
 
-    nav {
-        margin-right: 20px;
-    }
-
-    .mascotas-boton h3 {
-        margin-left: 20px;
-        font-size: 28px;
-    }
-
-    .vineta-violeta {
-        margin-left: 20px;
-        width: 40px;
-    }
-
-    .boton {
-        margin-right: 20px;
-        font-size: 14px;
-        padding: 8px 16px;
-    }
-
-    form {
-        margin-left: 20px;
-        margin-right: 20px;
-        padding: 30px 15px;
-    }
-
-    footer {
-        padding: 40px 30px;
-        background-size: cover;
-        background-position: center center;
-        min-height: auto;
-    }
-
-    footer .footer-contact {
-        margin: 25px 20px;
-        flex-direction: row;
-        justify-content: center;
-        gap: 25px;
-        flex-wrap: wrap;
-    }
-
-    footer .lorem-footer {
-        font-size: 17px;
-        max-width: 550px;
-        margin: 0 20px;
-    }
-
-    footer .contactanos {
-        font-size: 30px;
-        padding-top: 70px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .manu {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .logo {
-        margin: 0 0 20px 0;
-        width: 100px;
-    }
-
-    nav {
-        margin: 0;
-        margin-bottom: 15px;
-        font-size: 14px;
-        text-align: center;
-    }
-
-    .mascotas-boton {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .mascotas-boton h3 {
-        margin-left: 0;
-        font-size: 24px;
-        margin-bottom: 10px;
-    }
-
-    .vineta-violeta {
-        margin-left: 0;
-        width: 35px;
-    }
-
-    .boton {
-        margin: 0;
-        font-size: 14px;
-        padding: 8px 16px;
-    }
-
-    form {
-        margin: 20px 15px;
-        padding: 25px 15px;
-        max-width: 95%;
-        min-width: 280px;
-    }
-
-    .caja {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-
-    footer {
-        padding: 30px 20px;
-        background-size: contain;
-        background-position: center top;
-        min-height: auto;
-    }
-
-    footer .footer-contact {
-        margin: 20px 15px;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-
-    footer .lorem-footer {
-        margin: 0 15px;
-        font-size: 16px;
-        max-width: 100%;
-    }
-
-    footer .contactanos {
-        font-size: 28px;
-        padding-top: 60px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    h1 {
-        font-size: 24px;
-        margin-top: 30px;
-    }
-
-    .mascotas-boton h3 {
-        font-size: 20px;
-    }
-
-    .boton {
-        font-size: 13px;
-        padding: 6px 12px;
-    }
-
-    .vineta-violeta {
-        width: 30px;
-    }
-
-    form {
-        margin: 10px 10px;
-        padding: 20px 10px;
-        max-width: 100%;
-        min-width: 260px;
-    }
-
-    /* Aquí agrego ajustes del footer dentro del media query */
-    footer {
-        min-height: auto;
-        padding: 30px 15px;
-        background-size: contain;
-        background-position: center top;
-    }
-
-    footer .footer-contact {
-        margin: 20px 15px;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-
-    footer .lorem-footer {
-        margin-left: 15px;
-        margin-right: 15px;
-        font-size: 16px;
-    }
-
-    footer .contactanos {
-        font-size: 28px;
-        padding-top: 60px;
-    }
+  footer .contactanos {
+    font-size: 32px;
+    padding-top: 80px;
+  }
 }
