@@ -58,7 +58,7 @@ body {
   background-color: var(--colorPRINCIPAL);
 }
 
-body .mascotas-boton {
+.mascotas-boton {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -68,7 +68,7 @@ body .mascotas-boton {
   box-sizing: border-box;
 }
 
-body .mascotas-boton h3 {
+.mascotas-boton h3 {
   margin: 0;
   margin-left: 330px;
   padding-bottom: 0;
@@ -76,14 +76,14 @@ body .mascotas-boton h3 {
   color: var(--coloSECUNDARIO);
 }
 
-body .vineta-violeta {
+.vineta-violeta {
   width: 50px;
   margin-left: 330px;
   margin-top: 0;
   padding: 0;
 }
 
-body .boton {
+.boton {
   padding: 10px 20px;
   margin-right: 330px;
   background-color: #f0f0f0;
